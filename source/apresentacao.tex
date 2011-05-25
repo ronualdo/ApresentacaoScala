@@ -1,0 +1,130 @@
+\documentclass{beamer}
+%\usepackage{beamerthemedefault}
+\usepackage[utf8]{inputenc}
+\usepackage[portuges]{babel}
+\usepackage{subfigure}  
+\usepackage{multirow}
+\usepackage{listings}
+\usepackage{moreverb}
+% Vary the color applet  (try out your own if you like)
+%\colorlet{structure}{red!65!black}
+
+%\beamertemplateshadingbackground{white!100}{white}
+
+% \usetheme{AnnArbor}
+% \usetheme{Ilmenau}
+% \usetheme{Antibes}
+% \usetheme{JuanLesPins}
+% \usetheme{Bergen}
+% \usetheme{Luebeck}
+% \usetheme{Berkeley}
+% \usetheme{Madrid}
+% \usetheme{Berlin}
+% \usetheme{Malmoe}
+% \usetheme{Boadilla}
+% \usetheme{Marburg}
+% \usetheme{boxes}
+% \usetheme{Montpellier}
+% \usetheme{CambridgeUS}
+% \usetheme{PaloAlto}
+ \usetheme{Copenhagen}
+% \usetheme{Pittsburgh}
+% \usetheme{Darmstadt}
+% \usetheme{Rochester}
+% \usetheme{default}
+% \usetheme{Singapore}
+% \usetheme{Dresden}
+% \usetheme{Szeged}
+% \usetheme{Frankfurt}
+% \usetheme{Warsaw}
+% \usetheme{Goettingen}
+% \usetheme{Hannover}
+
+%    \usecolortheme{albatross}% - modre ramecky, jinak modre pozadi
+%    \usecolortheme{beetle}% - namodrale ramecky, sede pozadi
+%    \usecolortheme{beaver}% - namodrale ramecky, sede pozadi - branco + cinza
+%    \usecolortheme{crane}% - zlute ramecky, bile pozadi - amarelo
+%    \usecolortheme{sidebartab}% - namodrale ramecky, sede pozadi
+%    \usecolortheme{wolverine}% - namodrale ramecky, sede pozadi
+%    \usecolortheme{default}%
+%    \usecolortheme{dolphin}% - bile a sedomodre ramecky, podobne default, svetlejsi
+%    \usecolortheme{dove}% - bile ramecky, skoro cernobile
+%    \usecolortheme{fly}% - sede pozadi i ramecky, nadpisy bile
+%    \usecolortheme{lily}% - skoro stejne jako default, jen bile ramecky nadpisu
+%    \usecolortheme{orchid}% - stejne jako default?
+%    \usecolortheme{rose}% - stejne jako default?
+%    \usecolortheme{seagull}% - podobne dolphin, sede ramecky, bile pozadi
+%    \usecolortheme{seahorse}% - podobne dolphin, sede ramecky, bile pozadi
+%    \usecolortheme{whale}% - stejne jako default?
+
+\setbeamertemplate{items}[ball]
+\setbeamercolor{subitem projected}{bg=red} 
+\setbeamercolor{item}{bg=white}
+\setbeamercolor{item}{fg=red} 
+% 
+%
+\lstset{
+ numbers=left, 	% where to put the line-numbers
+%stepnumber=5,
+firstnumber=1,
+numberstyle=\tiny,
+extendedchars=true,
+breaklines=true,
+frame=tb,
+basicstyle=\footnotesize, %the size of the fonts that are used for the code
+stringstyle=\ttfamily
+captionpos=b,                   % sets the caption-position to bottom
+tabsize=2,
+showstringspaces=false
+}
+\title{Scala: Primeiros passos com o paradigma funcional}
+\setbeamercolor{item}{bg=white}
+ \setbeamercolor{item}{fg=red} 
+%==================================================
+%=============== Dados da Apresentação ============
+
+%\date{\today}
+\author[Diego, Ronualdo]{
+	Diego Saraiva \\
+	Ronualdo Maciel
+}
+ 
+% \subject{primeiro slide}
+\usepackage{amsmath}
+\begin{document}
+\rmfamily
+
+%\Large
+\frame{
+	\titlepage
+	\begin{center}
+		\date{\today}
+	\end{center}
+}
+
+\include{inicio/quem_somos}
+
+ %==================================================slide
+% % cria o sumário
+ \begin{frame}
+  \frametitle{Sumário}
+  \tableofcontents [pausesections]
+ \end{frame}
+%-------------------------------------------------------
+%==================================================slide\documentclass{beamer}
+
+\include{introducao/introducao}
+
+\include{paradigma_funcional/paradigma} 
+
+\include{sintaxe_scala/sintaxe}
+
+\include{conceitos/principais_conceitos}
+
+\include{exemplos_codigo/exemplos}
+
+\include{conclusao/informacoes}
+
+\include{conclusao/perguntas}
+
+\end{document}

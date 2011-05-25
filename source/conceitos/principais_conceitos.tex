@@ -1,0 +1,84 @@
+\begin{frame}{Principais conceitos}
+	\begin{block}{Funções como entidades de primeira ordem} 
+		\begin{itemize}
+			\item As funções podem ser criadas em qualquer lugar do programa
+			\item As funções podem armazenadas em estruturas de dados
+			\item As funções podem ser passadas como argumento para outras funções
+			\item As funções podem retornar outras funções como resultados
+		\end{itemize}
+	\end{block}
+	
+	\begin{center}
+		\lstinputlisting{conceitos/exemplos/funcoes.scala}
+	\end{center}
+\end{frame}
+
+\begin{frame}{Principais conceitos}
+	\begin{block}{Funções de alta-ordem}
+		\begin{itemize}
+			\item Recebem uma ou mais funções como entrada
+			\item Retornam uma função como saída
+			\begin{itemize}
+				\item Exemplo: map
+			\end{itemize}
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+%Uma closure ocorre normalmente quando uma função é declarada dentro do corpo de outra,
+%e a função interior referencia variáveis locais da função exterior. Em tempo de execução, 
+% quando a função exterior é executada, então uma closure é formada, que consiste do código 
+%da função interior e referências para quaisquer variáveis no escopo da função exterior que a closure necessita.
+\begin{frame}{Principais conceitos}
+	\begin{block}{Closures}
+		\begin{itemize}
+			\item Um closure é uma função que referencia variáveis livres no contexto léxico. 
+			\item Função anônima definida on-the-fly dentro de uma função ou expressão
+			\item Uma closure pode ser definida pelo compilador como resultado de outra função
+			\item Closure é diferente de uma função anônima
+		\end{itemize}
+	\end{block}
+	
+	\begin{center}
+		\lstinputlisting{conceitos/exemplos/closures.scala}
+	\end{center}
+\end{frame}
+
+
+\begin{frame}{Principais conceitos}
+	\begin{block}{Currying}
+		%technique of transforming a function that takes multiple arguments 
+		% (or an n-tuple of arguments) in such a way that it can be called as 
+		% a chain of functions each with a single argument.
+% 		Uma função "curried" transforma uma função que recebe múltiplos parâmetros em uma função que 
+		%pode ser chamada como uma cadeia de funções que recebem somente um parâmetro
+		%cada vez.
+		Currying é o processo de transformar uma função que recebe múltiplos
+		argumentos em uma função que recebe um único argumento e retorna outra função.
+	\end{block}
+	%\begin{block}{Visão informal}
+	%	Uma função "curried" quando ela possui mais de uma lista de parâmetros, sendo
+	%	assim, a mesma função
+	%	é invocada em cadeia para cada lista de parâmetro.
+	%\end{block}
+	
+	\begin{center}
+		\lstinputlisting{conceitos/exemplos/curry.scala}
+	\end{center}
+\end{frame}
+ 
+\begin{frame}{Principais conceitos}
+	\begin{block}{Pattern Matching}
+	Pattern matching é uma forma de associar nomes a coisas e possivelmente quebrar as expressões
+	em sub-expressões ao mesmo tempo em que associa cada sub-expressão a cosias.
+		\begin{itemize}
+			\item Reconhecer valores
+			\item Associar variáveis para reconhecer valores
+			\item ``Quebrar" valores em partes
+		\end{itemize}
+	\end{block}
+	
+	\begin{center}
+		\lstinputlisting{conceitos/exemplos/match.scala}
+	\end{center}
+\end{frame}
